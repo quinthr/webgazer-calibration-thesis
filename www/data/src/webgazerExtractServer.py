@@ -371,7 +371,7 @@ def main():
     # Setup webserver
     #
     listen_address = ''
-    listen_port = 8000
+    listen_port = process.env.PORT || 8000
     try:
         if len(sys.argv) == 2:
             listen_port = int(sys.argv[1])
